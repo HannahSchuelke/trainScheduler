@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Train Scheduler</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/main.js"></script>
+    
+</head>
+<div class="container">
+    <div class="row"></div>
+    <div class="col-md-12">
+        <h1>Anytime is Train Time</h1>
+    </div>
+    <div class="row"></div>
+    <div class="col-md-12">
+        <table class="table">
+            <caption>Current Train Schedule</caption>
+            <thead>
+              <tr>
+                <th scope="col">Train Name</th>
+                <th scope="col">Destination</th>
+                <th scope="col">Frequency (Min)</th>
+                <th scope="col">Next Arrival</th>
+                <th scope="col">Minutes Away</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Trenton Express</th>
+                <td>Trenton</td>
+                <td>25</td>
+                <td></td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <th scope="row">Oregon Trail</th>
+                <td>Salem, Oregon</td>
+                <td>3600</td>
+                <td></td>
+                <td>1154</td>
+              </tr>
+              <tr>
+                <th scope="row">Sing Sing Caravan</th>
+                <td>Atlanta</td>
+                <td>45</td>
+                <td></td>
+                <td>28</td>
+              </tr>
+              <tr>
+                <th scope="row">Boston Bus</th>
+                <td>Boston</td>
+                <td>65</td>
+                <td></td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <th scope="row">California Caravan</th>
+                <td>San Fransisco</td>
+                <td>6000</td>
+                <td></td>
+                <td>4740</td>
+              </tr>
+              <tr>
+                <th scope="row">Analben's Train</th>
+                <td>Florida</td>
+                <td>25</td>
+                <td></td>
+                <td>3</td>
+              </tr>
+            </tbody>
+          </table>
+        <div class="row">
+            <div id="" class="col-lg-12"></div>
+            <form>
+                <div class="form-group">
+                <h3>Add Train</h3>
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+    </div>  
+</body>
+</html>

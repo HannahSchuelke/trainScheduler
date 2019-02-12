@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Train Scheduler</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous"></script>
-    <script src="assets/javascript/main.js"></script>
-    
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Train Scheduler</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <script src="main.js"></script>
+
 </head>
 <div class="container">
-    <div class="row"></div>
-    <div class="col-md-12">
-        <h1>Anytime is Train Time</h1>
-    </div>
-    <div class="row"></div>
-    <div class="col-md-12">
-        <table class="table">
+  <div class="row"></div>
+  <div class="col-md-12">
+    <h1>Anytime is Train Time</h1>
+  </div>
+  <div class="row"></div>
+  <div class="col-md-12">
+    <table id="train-table">
+      <thead>
+        <th scope="col">Train Name</th>
+        <th scope="col">Destination</th>
+        <th scope="col">Frequency (Min)</th>
+        <th scope="col">Next Arrival</th>
+        <th scope="col">Minutes Away</th>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+
+    <!-- <table class="table">
             <caption>Current Train Schedule</caption>
             <thead>
               <tr>
@@ -73,27 +89,31 @@
                 <td>3</td>
               </tr>
             </tbody>
-          </table>
-        <div class="row">
-            <div id="" class="col-lg-12"></div>
-            <form>
-                <div class="form-group">
-                <h3>Add Train</h3>
-                  <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                <div class="form-group form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
+          </table> -->
+    <div class="row">
+      <div id="" class="col-lg-12"></div>
+      <form>
+        <div class="form-group">
+          <h3>Add Train</h3>
+          <label for="train-name">Train Name</label>
+          <input type="text" class="form-control" id="train-name">
         </div>
-    </div>  
+        <label for="train-destination">Destination</label>
+        <input type="text" class="form-control" id="train-destination">
+    </div>
+  </div>
+  <label for="first-train">First Train Time (HH:mm - military time)</label>
+  <input type="text" class="form-control" id="train-first-time">
+</div>
+</div>
+<label for="train-frequency">Frequency (min)</label>
+<input type="text" class="form-control" id="train-frequency">
+</div>
+
+</form>
+<button type="submit" class="btn btn-primary" id="train-submit">Submit</button>
+</div>
+</div>
 </body>
+
 </html>

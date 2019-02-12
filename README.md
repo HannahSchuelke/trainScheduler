@@ -4,7 +4,7 @@ This is a Train Scheduler. See the different trains, their destinations, frequen
 
 A HTML/CSS/Javascript/Jquery/Firebase project for the UMN Coding Bootcamp, Assignment seven.
 
-![](/trainscheduler.png)
+![](/trainScheduler.png)
 
 ## Author
 

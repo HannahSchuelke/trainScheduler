@@ -1,4 +1,11 @@
+.container {
+    margin: 50px;
+}
+
 h3 {
     padding: 20px;
     background-color: lightblue;
+}
+th { 
+    padding: 20px;
 }

@@ -8,7 +8,7 @@ var config = {
     messagingSenderId: "400258383096"
   };
   firebase.initializeApp(config);
-
+// accessing our database
   const trainDB = firebase.database();
 
   $(document).on("click", "#train-submit", function(){
